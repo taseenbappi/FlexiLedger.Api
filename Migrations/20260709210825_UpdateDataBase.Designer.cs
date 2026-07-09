@@ -2,6 +2,7 @@
 using FlexiLedger.Api.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -10,9 +11,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FlexiLedger.Api.Migrations
 {
     [DbContext(typeof(FlexiLedgerDbContext))]
-    partial class FlexiLedgerDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260709210825_UpdateDataBase")]
+    partial class UpdateDataBase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -61,9 +64,8 @@ namespace FlexiLedger.Api.Migrations
                     b.Property<decimal>("RechargeAmount")
                         .HasColumnType("numeric");
 
-                    b.Property<string>("RechargeNumber")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int>("RechargeNumber")
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 

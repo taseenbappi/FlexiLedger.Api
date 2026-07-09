@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlexiLedger.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+569530fcdb77732107040075d1ec65cfeb62ffe5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c808ad5539d4fcafd0472681ab1516da33090a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlexiLedger.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlexiLedger.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

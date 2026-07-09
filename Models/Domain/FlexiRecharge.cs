@@ -7,11 +7,11 @@ namespace FlexiLedger.Api.Models.Domain
     {
         public int Id { get; set; }
         public Carrier Carrier { get; set; }
-        public int RechargeNumber { get; set; }
+        public string RechargeNumber { get; set; } = string.Empty;
         public decimal RechargeAmount { get; set; }
         // Foreign Key
         public int FlexiNumberId { get; set; }
         // Navigation Property
-        public FlexiNumber FlexiNumber { get; set; } = null!;
+        public FlexiNumber? FlexiNumber { get; set; } = null!;
     }
 }

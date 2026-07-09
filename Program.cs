@@ -14,6 +14,9 @@ builder.Services.AddScoped<IFlexiNumberRepository, FlexiNumberRepository>();
 
 builder.Services.AddScoped<IFlexiNumberService, FlexiNumberService>();
 
+builder.Services.AddScoped<IFlexiRechargeRepository, FlexiRechargeRepository>();
+builder.Services.AddScoped<IFlexiRechargeService, FlexiRechargeService>();
+
 builder.Services.AddControllers();
 
 builder.Services.AddOpenApi();
